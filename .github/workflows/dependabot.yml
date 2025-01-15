@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Configuration pour les dépendances Go
+  - package-ecosystem: "gomod"
+    directory: "/" # Chemin où se trouve le fichier go.mod
+    schedule:
+      interval: "daily"
+
+  # Configuration pour les dépendances Docker
+  - package-ecosystem: "docker"
+    directory: "/" # Chemin où se trouve le fichier Dockerfile
+    schedule:
+      interval: "daily"
